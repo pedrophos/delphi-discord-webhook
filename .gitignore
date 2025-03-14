@@ -1,0 +1,5 @@
+*.dcu
+*.dproj.locel
+*.identcache
+*.ini
+tests/__history
