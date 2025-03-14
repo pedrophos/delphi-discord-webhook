@@ -11,22 +11,22 @@ uses
 type
   TForm1 = class(TForm)
     edtTest: TEdit;
-    Button1: TButton;
+    btnTextoSimples: TButton;
     dtTest: TFDMemTable;
     dtTestCODIGO: TStringField;
     dtTestDESCRICAO: TStringField;
     dtTestESTOQUE: TStringField;
-    Button2: TButton;
+    btnTabela: TButton;
     rgTipoTabela: TRadioGroup;
     FDMemTable1: TFDMemTable;
     Memo1: TMemo;
-    Button3: TButton;
+    btnWebHookMessage: TButton;
     Label1: TLabel;
     edtServerUrl: TEdit;
     Label2: TLabel;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
+    procedure btnTextoSimplesClick(Sender: TObject);
+    procedure btnTabelaClick(Sender: TObject);
+    procedure btnWebHookMessageClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -51,7 +51,7 @@ uses
 
 {$R *.dfm}
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TForm1.btnTextoSimplesClick(Sender: TObject);
 var
   vSendMessage: TRequestWebHook;
   vTestMessage: String;
@@ -66,7 +66,7 @@ begin
   end;
 end;
 
-procedure TForm1.Button2Click(Sender: TObject);
+procedure TForm1.btnTabelaClick(Sender: TObject);
 var
   vSendMessage: TRequestWebHook;
 begin
@@ -116,7 +116,7 @@ begin
   vSendMessage.Send;
 end;
 
-procedure TForm1.Button3Click(Sender: TObject);
+procedure TForm1.btnWebHookMessageClick(Sender: TObject);
 var
   vWebHook: TWebhookMessage;
   vTesteJson: TJSONObject;

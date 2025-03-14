@@ -48,23 +48,23 @@ object Form1: TForm1
     TabOrder = 0
     Text = 'Texto a ser enviado'
   end
-  object Button1: TButton
+  object btnTextoSimples: TButton
     Left = 452
     Top = 65
     Width = 209
     Height = 25
     Caption = 'Enviar Texto Simples'
     TabOrder = 1
-    OnClick = Button1Click
+    OnClick = btnTextoSimplesClick
   end
-  object Button2: TButton
+  object btnTabela: TButton
     Left = 280
     Top = 113
     Width = 209
     Height = 25
     Caption = 'Enviar Tabela'
     TabOrder = 2
-    OnClick = Button2Click
+    OnClick = btnTabelaClick
   end
   object rgTipoTabela: TRadioGroup
     Left = 8
@@ -87,14 +87,14 @@ object Form1: TForm1
     ReadOnly = True
     TabOrder = 4
   end
-  object Button3: TButton
+  object btnWebHookMessage: TButton
     Left = 8
     Top = 164
     Width = 193
     Height = 25
     Caption = 'Enviar Exemplo mensagem discord'
     TabOrder = 5
-    OnClick = Button3Click
+    OnClick = btnWebHookMessageClick
   end
   object edtServerUrl: TEdit
     Left = 5
