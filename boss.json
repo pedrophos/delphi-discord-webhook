@@ -1,6 +1,7 @@
 {
     "name": "pedrophos/delphi-discord-webhook",
     "description": "Discord webhook for Delphi",
+    "version": "1.0.1",
     "src": "src",
     "homepage": "https://github.com/pedrophos/delphi-discord-webhook",
     "license": "MIT"
