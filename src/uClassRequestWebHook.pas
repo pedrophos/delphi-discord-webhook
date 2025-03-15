@@ -17,11 +17,11 @@ type
      function GetRightPadding(aFieldSize, aTextSize: integer): integer;
      function SendDiscorMessage: Boolean;
      function Post(aMessage: TJSONObject): Boolean;
+     function SendMessage: Boolean;
+     destructor Destroy;
 
     public
       constructor Create(aWebHook: String);
-      destructor Destroy;
-      function SendMessage: Boolean;
       procedure AddTable(aDataSet: TDataSet);
       procedure AddTableInline(aDataset: TDataSet);
       function Send: Boolean;

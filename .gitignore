@@ -3,3 +3,5 @@
 *.identcache
 *.ini
 tests/__history
+src/__recovery
+src/__history

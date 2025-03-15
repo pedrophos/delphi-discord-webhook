@@ -60,7 +60,7 @@ begin
   try
     vSendMessage.Messages.Add(edtTest.Text);
 
-    vSendMessage.SendMessage;
+    vSendMessage.Send;
   finally
     FreeAndNil(vSendMessage);
   end;
@@ -141,8 +141,6 @@ begin
       vWebHook.Embeds[0].Description := 'Descrição para testar';
       vWebHook.Embeds[0].Footer.Text := 'Texto Rodapé';
       vWebHook.Embeds[0].TimeStamp := Now;
-
-//      vWebHook.
 
       vSendMessage.WebHookMessage := vWebHook;
       vSendMessage.Send;
